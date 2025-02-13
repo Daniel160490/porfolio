@@ -11,7 +11,7 @@ const Home = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/assets/cv/CURRICULUM2025.pdf";
+    link.href = "../../assets/cv/CURRICULUM2025.pdf";
     link.download = "CURRICULUM2025.pdf";
     document.body.appendChild(link);
     link.click();
@@ -19,7 +19,7 @@ const Home = () => {
   };
 
   return (
-    <div className="home-container">
+    <div className="home-container main">
       <div className="text-container">
         <h2 className="animacion_texto">¡Hola! Me llamo</h2>
         <h1 className="name-title animacion_texto">Daniel García Díaz</h1>
