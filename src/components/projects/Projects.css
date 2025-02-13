@@ -1,0 +1,28 @@
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(233, 237, 213, 0.267);
+    background-color: #1f2937;
+    color: #E9EDD5;
+    height: 500px;
+}
+
+.box_component{
+    margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .box_component{
+        margin-top: 62% !important;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 18rem;
+    }
+}

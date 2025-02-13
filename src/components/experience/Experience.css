@@ -1,0 +1,10 @@
+.box_component{
+    margin-top: 10%;
+}
+
+.box_experiences {
+    border-left: 2px solid #F0D7B4;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(233, 237, 213, 0.267);
+    margin-bottom: 5%;
+}
