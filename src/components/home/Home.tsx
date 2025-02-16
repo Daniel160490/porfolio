@@ -11,7 +11,7 @@ const Home = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "../../assets/cv/CURRICULUM2025.pdf";
+    link.href = "/assets/cv/CURRICULUM2025.pdf";
     link.download = "CURRICULUM2025.pdf";
     document.body.appendChild(link);
     link.click();

@@ -14,7 +14,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="box_component">
+      <div className="box_component mb-4">
         <h1>Mis Proyectos</h1>
         <div className="d-flex flex-wrap justify-content-center gap-4 mt-3">
 
@@ -36,7 +36,7 @@ const Projects = () => {
                   </h6>
                 </div>
               </div>
-              <p className="card-text">
+              <p className="card-text animacion_texto">
                 Mediante esta aplicación se pretende acercar la gamificación al mundo digital, para que sirva como apoyo o como elemento acompañante al proceso de enseñanza-aprendizaje.
               </p>
             </div>
@@ -66,7 +66,7 @@ const Projects = () => {
                   </h6>
                 </div>
               </div>
-              <p className="card-text">
+              <p className="card-text animacion_texto">
                 Aplicación que pretende hacer más fácil y seguro el momento de realizar un viaje. Especialmente enfocada para el colectivo LGTBI.
               </p>
             </div>
@@ -87,7 +87,7 @@ const Projects = () => {
               <h6 className="card-subtitle mb-2 text-body-secondary">
                 <FaPython size={20} color="#E9EDD5" />
               </h6>
-              <p className="card-text">
+              <p className="card-text animacion_texto">
                 Bot de Telegram diseñado para dar la bienvenida de forma personalizada a nuevos miembros que se unan a tu grupo.
               </p>
             </div>
@@ -102,13 +102,13 @@ const Projects = () => {
           {/* Project 4 */}
           <div className="card" style={{ width: "18rem" }}>
             <div className="card-header">
-              <h5 className="card-title">Portfolio</h5>
+              <h5 className="card-title">Porfolio</h5>
             </div>
             <div className="card-body">
               <h6 className="card-subtitle mb-2 text-body-secondary">
                 <FaReact size={20} color="#E9EDD5" />
               </h6>
-              <p className="card-text">
+              <p className="card-text animacion_texto">
                 Currículum web creado para permitir tener más acceso a mi estado actual profesional.
               </p>
             </div>
