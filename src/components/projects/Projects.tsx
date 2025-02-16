@@ -113,7 +113,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="card-footer text-body-secondary">
-              <button type="button" className="card-link" onClick={() => handleLinkClick("https://github.com/Daniel160490/Portfolio")}>
+              <button type="button" className="card-link" onClick={() => handleLinkClick("https://github.com/Daniel160490/porfolio")}>
                 <FiGithub size={20} style={{ marginRight: "8px" }} />
                 Github
               </button>
