@@ -3,6 +3,8 @@ import { IoDownloadOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
+import Magnet from "../animations/magnet/Magnet";
+import SplashCursor from '../animations/splashCursor/SplashCursor';
 
 const Home = () => {
   const handleLinkClick = (url: string) => {
@@ -19,28 +21,35 @@ const Home = () => {
   };
 
   return (
-    <div className="home-container main">
-      <div className="text-container">
-        <h2 className="animacion_texto">¡Hola! Me llamo</h2>
-        <h1 className="name-title animacion_texto">Daniel García Díaz</h1>
-        <h3 className="role-title animacion_texto">DEVELOPER | FULL-STACK</h3>
+    <>
+      <div className="home-container main">
+        <div className="text-container">
+          <h2 className="animacion_texto">¡Hola! Me llamo</h2>
+          <h1 className="name-title animacion_texto">Daniel García Díaz</h1>
+          <h3 className="role-title animacion_texto">DEVELOPER | FULL-STACK</h3>
+        </div>
+        <SplashCursor />
+        <Magnet padding={50} disabled={false} magnetStrength={50}>
+          <div className="button-container">
+            <button onClick={() => handleLinkClick("https://www.linkedin.com/in/daniel-garc%C3%ADa-d%C3%ADaz-0a970862/")}>
+              <CiLinkedin size={30} /> Linkedin
+            </button>
+            <button onClick={() => handleLinkClick("https://github.com/Daniel160490")}>
+              <FiGithub size={30} /> Github
+            </button>
+            <button onClick={handleDownloadCV}>
+              <IoDownloadOutline size={30} /> C.V.
+            </button>
+            <button>
+              <MdOutlineEmail size={30} />
+              <a href="mailto:danigd71@gmail.com">Correo</a>
+            </button>
+          </div>
+        </Magnet>
+
       </div>
-      <div className="button-container">
-        <button onClick={() => handleLinkClick("https://www.linkedin.com/in/daniel-garc%C3%ADa-d%C3%ADaz-0a970862/")}>
-          <CiLinkedin size={30} /> Linkedin
-        </button>
-        <button onClick={() => handleLinkClick("https://github.com/Daniel160490")}>
-          <FiGithub size={30} /> Github
-        </button>
-        <button onClick={handleDownloadCV}>
-          <IoDownloadOutline size={30} /> C.V.
-        </button>
-        <button>
-          <MdOutlineEmail size={30} />
-          <a href="mailto:danigd71@gmail.com">Correo</a>
-        </button>
-      </div>
-    </div>
+    </>
+
   );
 };
 

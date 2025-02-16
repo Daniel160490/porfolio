@@ -5,6 +5,7 @@ import { FaReact } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 
 import './Projects.css';
+import SplashCursor from '../animations/splashCursor/SplashCursor';
 
 const Projects = () => {
 
@@ -14,6 +15,7 @@ const Projects = () => {
 
   return (
     <>
+      <SplashCursor />
       <div className="box_component mb-4">
         <h1>Mis Proyectos</h1>
         <div className="d-flex flex-wrap justify-content-center gap-4 mt-3">

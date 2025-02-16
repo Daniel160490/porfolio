@@ -1,9 +1,12 @@
 import './Experience.css';
+import SplashCursor from '../animations/splashCursor/SplashCursor';
+
 
 const Experience = () => {
 
     return (
         <>
+            <SplashCursor />
             <div className="box_component animacion_texto">
                 <h1>Mi Experiencia</h1>
                 <div className="d-flex flex-wrap justify-content-center gap-4 mt-4">
@@ -31,7 +34,7 @@ const Experience = () => {
                                 </ul>
                             </p>
                             <p>
-                                
+
                             </p>
                         </div>
                     </div>

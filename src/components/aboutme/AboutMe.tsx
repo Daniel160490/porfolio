@@ -1,9 +1,11 @@
 import img from '../../assets/img/20240401_025930.jpg';
 import './AboutMe.css';
+import SplashCursor from '../animations/splashCursor/SplashCursor';
 
 const AboutMe = () => {
   return (
     <div className="about-container">
+      <SplashCursor />
       <div className="text-content">
         <p>
           Hola, soy Daniel, desarrollador de aplicaciones multiplataforma con experiencia desde 2019.
