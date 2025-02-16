@@ -5,6 +5,7 @@ import { FiGithub } from "react-icons/fi";
 import { CiLinkedin } from "react-icons/ci";
 import Magnet from "../animations/magnet/Magnet";
 import SplashCursor from '../animations/splashCursor/SplashCursor';
+import DecryptedText from "../animations/decrypted/Decrypted";
 
 const Home = () => {
   const handleLinkClick = (url: string) => {
@@ -24,9 +25,41 @@ const Home = () => {
     <>
       <div className="home-container main">
         <div className="text-container">
-          <h2 className="animacion_texto">¡Hola! Me llamo</h2>
-          <h1 className="name-title animacion_texto">Daniel García Díaz</h1>
-          <h3 className="role-title animacion_texto">DEVELOPER | FULL-STACK</h3>
+
+          <h2 className="animacion_texto">
+            <DecryptedText
+              text="¡Hola! Me llamo"
+              speed={100}
+              maxIterations={20}
+              characters="ABCD1234!?"
+              className="revealed"
+              parentClassName="all-letters"
+              encryptedClassName="encrypted"
+            />
+          </h2>
+          <h1>
+            <DecryptedText
+              text="Daniel García Díaz"
+              speed={100}
+              maxIterations={20}
+              characters="ABCD1234!?"
+              className="revealed"
+              parentClassName="all-letters"
+              encryptedClassName="encrypted"
+            />
+          </h1>
+
+          <h3 className="role-title animacion_texto">
+            <DecryptedText
+              text="DEVELOPER | FULL-STACK"
+              speed={100}
+              maxIterations={20}
+              characters="ABCD1234!?"
+              className="revealed"
+              parentClassName="all-letters"
+              encryptedClassName="encrypted"
+            />
+          </h3>
         </div>
         <SplashCursor />
         <Magnet padding={50} disabled={false} magnetStrength={50}>
