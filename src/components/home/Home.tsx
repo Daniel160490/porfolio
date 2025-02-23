@@ -6,13 +6,16 @@ import { CiLinkedin } from "react-icons/ci";
 import Magnet from "../animations/magnet/Magnet";
 import SplashCursor from '../animations/splashCursor/SplashCursor';
 import DecryptedText from "../animations/decrypted/Decrypted";
+import { useEffect } from "react";
 
 const Home = () => {
   const handleLinkClick = (url: string) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
-  const handleDownloadCV = () => {
+  const handleDownloadCV = async () => {
+    await fetch("http://127.0.0.1:5000/track-cv-download", { method: "POST" });
+
     const link = document.createElement("a");
     link.href = "/assets/cv/CURRICULUM2025.pdf";
     link.download = "CURRICULUM2025.pdf";
@@ -20,6 +23,11 @@ const Home = () => {
     link.click();
     document.body.removeChild(link);
   };
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:5000/track-visit", { method: "POST" });
+  }, []);
+
 
   return (
     <>
