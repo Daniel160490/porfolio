@@ -108,3 +108,24 @@ button a {
     opacity: 1;
   }
 }
+
+
+
+.visit-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  gap: 10px;
+}
+
+.eye-icon {
+  transition: transform 0.1s ease-in-out;
+}
+
+.blinking {
+  transform: scaleY(0.2);
+}
