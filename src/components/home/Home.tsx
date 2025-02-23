@@ -14,7 +14,7 @@ const Home = () => {
   };
 
   const handleDownloadCV = async () => {
-    await fetch("http://127.0.0.1:5000/track-cv-download", { method: "POST" });
+    await fetch("https://porfolio-6cnd.onrender.com//track-cv-download", { method: "POST" });
 
     const link = document.createElement("a");
     link.href = "/assets/cv/CURRICULUM2025.pdf";
@@ -25,7 +25,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/track-visit", { method: "POST" });
+    fetch("https://porfolio-6cnd.onrender.com//track-visit", { method: "POST" });
   }, []);
 
 
